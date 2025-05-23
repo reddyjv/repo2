@@ -1,0 +1,139 @@
+/* Main Container */
+.insights-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Card Styling */
+.insights-card {
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  border: none;
+  overflow: hidden;
+  background-color: white;
+}
+
+/* Sidebar Styling */
+.insights-sidebar {
+  background-color: #f5f7ff;
+  padding: 20px;
+  border-right: 1px solid #e0e6ff;
+}
+
+.insights-title {
+  color: #3a57e8;
+  font-weight: 600;
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #e0e6ff;
+}
+
+.insight-box {
+  padding: 12px 15px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid #e0e6ff;
+  background-color: white;
+  color: #4a5568;
+  font-weight: 500;
+}
+
+.insight-box:hover {
+  background-color: #3a57e8;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(58, 87, 232, 0.2);
+}
+
+/* Main Content Area */
+.insights-main {
+  padding: 20px;
+}
+
+.chart-container {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.chart-title {
+  color: #4a5568;
+  font-weight: 600;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Table Styling */
+.insights-table {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.insights-table thead th {
+  background-color: #3a57e8;
+  color: white;
+  border: none;
+}
+
+.insights-table tbody tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+.insights-table tfoot {
+  background-color: #edf2f7;
+  font-weight: 600;
+}
+
+/* Grand Total Styling */
+.grand-total {
+  background-color: #3a57e8;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+/* Loading and Error States */
+.loading-text, .error-text {
+  text-align: center;
+  padding: 40px;
+}
+
+.loading-text {
+  color: #718096;
+}
+
+.error-text {
+  color: #e53e3e;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+  .insights-sidebar {
+    border-right: none;
+    border-bottom: 1px solid #e0e6ff;
+    margin-bottom: 20px;
+  }
+  
+  .chart-container {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .insights-container {
+    padding: 10px;
+  }
+  
+  .insight-box {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
